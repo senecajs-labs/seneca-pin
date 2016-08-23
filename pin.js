@@ -10,6 +10,11 @@ Pin.preload = function () {
 
   seneca.decorate('pin', api_pin)
 
+  seneca.once('ready', ()=> {
+    seneca.root.emit('pin')
+    seneca.root.emit('after-pin')
+  })
+
   return {
     name: 'pin'
   }
