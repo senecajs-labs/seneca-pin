@@ -1,0 +1,45 @@
+{
+  "name": "seneca-pin",
+  "description": "pin seneca acts as objects",
+  "homepage": "http://senecajs.org",
+  "version": "0.0.1",
+  "license": "MIT",
+  "keywords": [
+    "seneca",
+    "plugin",
+    "microservice"
+  ],
+  "author": "Dean McDonnell (https://github.com/mcdonnelldean)",
+  "contributors": [
+    "Richard Rodger (http://richardrodger.com)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senecajs-labs/seneca-pin.git"
+  },
+  "main": "pin.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "test": "lab -v -P test -L -t 80",
+    "coveralls": "lab -s -P test -r lcov | coveralls",
+    "coverage": "lab -v -P test -L -t 80 -r html > docs/coverage.html",
+    "annotate": "docco pin.js -o docs/annotated"
+  },
+
+  "dependencies": {
+    "jsonic": "0.2.2",
+    "lodash": "4.15.0"
+  },
+  "devDependencies": {
+    "code": "3.0.x",
+    "coveralls": "2.11.x",
+    "docco": "0.7.x",
+    "eslint-config-seneca": "3.x.x",
+    "eslint-plugin-hapi": "4.x.x",
+    "eslint-plugin-standard": "2.x.x",
+    "lab": "11.0.x",
+    "seneca": "senecajs/seneca"
+  }
+}
