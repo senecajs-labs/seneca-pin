@@ -2,7 +2,7 @@
   "name": "seneca-pin",
   "description": "pin Senecajs acts as objects",
   "homepage": "http://senecajs.org",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "keywords": [
     "seneca",
@@ -27,7 +27,6 @@
     "coverage": "lab -v -P test -L -t 80 -r html > docs/coverage.html",
     "annotate": "docco pin.js -o docs/annotated"
   },
-
   "dependencies": {
     "jsonic": "0.2.2",
     "lodash": "4.15.0"
